@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- Font Awesome Link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- NaNum Font Link -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+  <!-- Google Font Link -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet">
+  <title id="text"></title>
+  <!-- Reset CSS Link -->
+  <link rel="stylesheet" href="/renewal_mammoth/css/reset.css">
+  <!-- Style CSS Link -->
+  <link rel="stylesheet" href="/renewal_mammoth/css/style.css">
+  <!-- Animation CSS Link -->
+  <link rel="stylesheet" href="/renewal_mammoth/css/animation.css">
+
+  <!-- Title Typing Effect -->
+  <script>
+    //사이트 상단 글자 하나씩 나타나게 해주는 효과
+    const string = "MAMMOTH COFFEE";
+    const array = string.split('');
+    //console.log(array);
+
+    function frameLooper() {
+      if (array.length > 0) {
+        document.getElementById("text").innerHTML += array.shift();
+      } else {
+        clearTimeout(timer);
+      }
+
+      timer = setTimeout('frameLooper()', 200);
+    }
+
+    frameLooper();
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- PC Frame Header and Navigation -->
+    <header class="header" id="header">
+      <div class="center">
+        <div class="logo">
+          <a href="#" class="logo_link"></a>
+        </div>
+        <ul class="topnav">
+          <li><a href="#">about us</a></li>
+          <li><a href="#">menu</a></li>
+          <li><a href="#">store</a></li>
+          <li><a href="#">franchise</a></li>
+          <li><a href="#">customer</a></li>
+          <li><a href="#">event</a></li>
+        </ul>
+      </div>
+      <!-- Hidden Mega Box Menu -->
+      <div class="hidden_sub">
+        <div class="line"></div>
+        <div class="sub_nav">
+          <div class="subnav_box box_1">
+            <ul>
+              <li class="sub_nav_tit">메머드커피01</a></li>
+              <li><a href="#">메머드커피02</a></li>
+              <li><a href="#">메머드 익스프레스</a></li>
+              <li><a href="#">연혁</a></li>
+            </ul>
+          </div>
+          <div class="subnav_box box_2">
+            <ul>
+              <li class="sub_nav_tit">메머드커피03</a></li>
+              <li><a href="#">메머드커피04</a></li>
+              <li><a href="#">메머드 익스프레스</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">연혁</a></li>
+            </ul>
+            <ul>
+              <li class="sub_nav_tit">메머드커피05</a></li>
+              <li><a href="#">메머드커피06</a></li>
+              <li><a href="#">메머드 익스프레스</a></li>
+              <li><a href="#">연혁</a></li>
+
+            </ul>
+          </div>
+          <div class="subnav_box box_3">
+            <ul>
+              <li class="sub_nav_tit">메머드커피07</a></li>
+              <li><a href="#">메머드커피08</a></li>
+              <li><a href="#">메머드 익스프레스</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">연혁</a></li>
+            </ul>
+          </div>
+          <div class="subnav_box box_4">
+            <ul>
+              <li class="sub_nav_tit">메머드커피09</a></li>
+              <li><a href="#">메머드커피10</a></li>
+              <li><a href="#">메머드 익스프레스</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">연혁</a></li>
+            </ul>
+          </div>
+          <div class="subnav_box box_5">
+            <ul>
+              <li class="sub_nav_tit">메머드커피11</a></li>
+              <li><a href="#">메머드커피12</a></li>
+              <li><a href="#">메머드 익스프레스</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">연혁</a></li>
+            </ul>
+          </div>
+          <div class="subnav_box box_6">
+            <ul>
+              <li class="sub_nav_tit">메머드커피13</a></li>
+              <li><a href="#">메머드커피14</a></li>
+              <li><a href="#">메머드 익스프레스</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">연혁</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Page 1 section -->
+    <section class="page_1 section">
+      <div class="main_msg">
+        <div class="logo_box">
+          <img src="/renewal_mammoth/img/page01_logo.png" alt="">
+        </div>
+        <div class="main_txt">
+          <h2>맛, 멋 그리고 진심</h2>
+        </div>
+        <div class="btn_box">
+          <a href="#">매머드 커피</a>
+          <a href="#">매머드 익스프레스</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- jQuery Framework Load -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Main jQuery File Load -->
+  <script src="/renewal_mammoth/js/jq.main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+.center{width:100%; height: auto; max-width: 1060px; margin:auto; position:relative;}
+.wrap{width:100%; height:auto;}
+
+/* PC Frame Header Style Code */
+.header{position:fixed; width:100%; height: 105px; top:0; z-index:999;}
+.header .center{height:100%; display:flex;}
+.header .logo{padding:20px 0;  display: flex; align-items: center;}
+.header .logo_link{width:247px; height:18px;background:url(/renewal_mammoth/img/mmenu_logo.png) no-repeat center center; background-size: cover;}
+
+.header .topnav{height: 100%; text-align: center; display: flex; align-items: center;}
+.header .topnav li{padding:0 30px;}
+.header .topnav a{font-size:17px; color:#fff; position: relative; display: block; font-weight: bold;text-transform: uppercase; padding-top:5px;}
+.header .topnav a:after{content:''; position: absolute; display: block; width:0%; height:3px; background:red; left:0 ;right:0; margin: auto; transition: all 0.4s; top:61px;}
+.header .topnav li:hover a:after{width:100%;}
+
+ /* Hidden Mega Box Style Code */
+.header .hidden_sub{width:100%; background:#fff; position: fixed; top:0; left:0; display:none; height: 485px;z-index: -1;}
+.header .hidden_sub .line{width:100%; border-top:1px solid #b1b1b1; position: absolute; top:105px;}
+
+/* Hidden Mega Box Sub Menu Style Code */
+.header .hidden_sub .sub_nav{width:1060px; margin:auto; position:relative; top:105px;}
+.header .hidden_sub .subnav_box{position:absolute}
+.header .hidden_sub .subnav_box ul{display: inline-block; vertical-align: text-top;}
+.header .hidden_sub .subnav_box ul .sub_nav_tit{font-weight: bold;margin-top:20px;
+font-size:14px; line-height: 30px;}
+
+.header .hidden_sub .subnav_box ul a{color:#000; display: block; width:100%; height: 100%; line-height: 30px; font-size: 14px; transition: all 0.4s;}
+.header .hidden_sub .subnav_box ul a:hover{color:#d72329;}
+
+.header .hidden_sub .subnav_box.box_1{left:280px;}
+.header .hidden_sub .subnav_box.box_2{left:416px;}
+.header .hidden_sub .subnav_box.box_3{left:529px;}
+.header .hidden_sub .subnav_box.box_4{left:640px;}
+.header .hidden_sub .subnav_box.box_5{left:795px;}
+.header .hidden_sub .subnav_box.box_6{left:940px;}
+
+
+/* Page_1 Style */
+.page_1{background:url(/renewal_mammoth/img/page_bg01.jpg) no-repeat center center;
+background-size:cover; position:relative;width:100%; height:100vh;display: flex;align-items: center; justify-content: center;}
+.page_1 .main_msg{display:flex;flex-direction: column;align-items: center;}
+.page_1 .main_msg img{animation:logo 0.5s 1;}
+/* animation-fill-mode:forwards 를 써놓고 애니메이션 미리 확인 해도 나중에 문제없음*/
+
+.page_1 .main_msg .main_txt{width:0;padding:30px 0; white-space: nowrap;overflow: hidden; animation:txt 0.7s 1; animation-delay: 0.5s; animation-fill-mode: forwards; text-align: center;}
+.page_1 .main_msg .main_txt h2{font-size:43px; color:#fff;}
+
+.page_1 .main_msg .btn_box{width:100%;height:auto;display:flex;}
+.page_1 .main_msg .btn_box a{width:195px; padding:20px 0; border:1px solid #fff; position:relative;overflow:hidden; font-weight:bold; text-align: center;color:#fff; z-index:10}
+
+.page_1 .main_msg .btn_box a:after{content:''; position: absolute; width:150%; height: 100%; background:#fff; top:0; left:-350px; z-index:-1; transform: skewX(-45deg);transition:all 0.4s;}
+
+.page_1 .main_msg .btn_box a:hover:after{left:-50px;}
+.page_1 .main_msg .btn_box a:hover{color:#d72329;}

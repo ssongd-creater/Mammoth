@@ -1,9 +1,47 @@
 .center{width:100%; height: auto; max-width: 1060px; margin:auto; position:relative;}
 .wrap{width:100%; height:auto;}
+.overlay{position:fixed; width:0; height:100vh; left:0; top:0; background:#000;opacity:0;z-index:9999;}
+section{position:relative;}
 
 /* PC Frame Header Style Code */
 .header{position:fixed; width:100%; height: 105px; top:0; z-index:999;}
 .header .center{height:100%; display:flex;}
+
+/* Mobile Menu Icon Style Code */
+.header .menu_ico{width:25px; height: 25px; cursor:point; _background:#777; position: absolute; left:20px;top:50%; transform: translateY(-50%); display: none;}
+
+.header .menu_ico span{width:100%; height: 2px; background:#fff; display:block;}
+.header .menu_ico span:nth-child(2){margin: 8px 0;}
+
+.header .menu_ico.active span{animation:ico-ani 0.6s 1; animation-fill-mode: forwards;}
+.header .menu_ico.active span:nth-child(2){animation-delay:0.2s;}
+.header .menu_ico.active span:nth-child(3){animation-delay:0.4s;}
+
+/* Mobile Navigation Style Code */
+.header .mobile_nav{width:60%; height:100vh; background:#fff; position:fixed; left:-60%;}
+.header .mobile_inner{width:100%; height: auto;}
+.header .mobile_inner .mobile_li{border:1px solid #ccc; width:100%; position: relative;;}
+.header .mobile_inner .mobile_logo_box{width:100%; display:flex; justify-content: center; padding:10px 0;}
+.header .mobile_inner .close_btn{position: absolute;width:25px; height:25px; right:20px; cursor:pointer; top:50%; transform: translateY(-50%) rotate(45deg);}
+.header .mobile_inner .close_btn span{display: block; background:#000; position:absolute;}
+.header .mobile_inner .close_btn span:nth-child(1){width:100%; height: 2px;top:50%; transform: translateY(-50%);}
+.header .mobile_inner .close_btn span:nth-child(2){width:2px; height:100%;left:50%; transform: translateX(-50%);}
+
+.header .mobile_li .mobile_tit{display: block; padding:15px; font-size:16px; font-weight:bold; color:#000; position:relative;}
+.header .mobile_li .mobile_tit:before{content: ''; display:block; width:10px; height:2px; background:#000; position:absolute;top:50%; right:27px;}
+.header .mobile_li .mobile_tit:after{content: ''; display:block; width:10px; height:2px; background:#000; position:absolute;top:50%; right:27px; transform: rotate(90deg);}
+
+.header .mobile_li .mobile_tit.rotate:before{transform: rotate(45deg);}
+.header .mobile_li .mobile_tit.rotate:after{transform: rotate(135deg);}
+
+/* Mobile Sub Navigation Style Code */
+.header .mobile_sub_nav{width:100%; height:auto; padding:0 15px 15px 20px; display:none;}
+.header .mobile_sub_nav .mobile_sub_li{line-height: 25px;}
+.header .mobile_sub_nav .mobile_sub_li a{font-size:14px; color:#000;}
+
+
+.header .mobile_inner .mobile_logo_box .mobile_logo{display: block; width:60px; height: 40px; background:url(/renewal_mammoth/img/monav_logo.png) no-repeat center center; background-size: cover;}
+
 .header .logo{padding:20px 0;  display: flex; align-items: center;}
 .header .logo_link{width:247px; height:18px;background:url(/renewal_mammoth/img/mmenu_logo.png) no-repeat center center; background-size: cover;}
 
@@ -37,7 +75,7 @@ font-size:14px; line-height: 30px;}
 
 /* Page_1 Style */
 .page_1{background:url(/renewal_mammoth/img/page_bg01.jpg) no-repeat center center;
-background-size:cover; position:relative;width:100%; height:100vh;display: flex;align-items: center; justify-content: center;}
+background-size:cover; width:100%; height:100vh;display: flex;align-items: center; justify-content: center;}
 .page_1 .main_msg{display:flex;flex-direction: column;align-items: center;}
 .page_1 .main_msg img{animation:logo 0.5s 1;}
 /* animation-fill-mode:forwards 를 써놓고 애니메이션 미리 확인 해도 나중에 문제없음*/

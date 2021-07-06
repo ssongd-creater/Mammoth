@@ -1,0 +1,6 @@
+@media screen and (max-width: 1060px) {
+  .header{height: 60px; background: rgba(0,0,0,0.5);}
+  .header .center{justify-content: center;}
+  .header .menu_ico{display: block;}
+  .header .topnav{display:none;}
+}

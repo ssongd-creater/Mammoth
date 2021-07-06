@@ -1,9 +1,18 @@
+/* Landing Logo Animation */
 @keyframes logo{
   0%{transform: translateY(-70px); opacity: 0;}
   100%{transform: translateY(0); opacity: 1;}
 }
 
+/* Landing Text Animation */
 @keyframes txt{
   0%{width:0;}
+  100%{width:100%;}
+}
+
+/* Mobile Menu Animation */
+@keyframes ico-ani{
+  0%{width:100%;}
+  50%{width:0}
   100%{width:100%;}
 }

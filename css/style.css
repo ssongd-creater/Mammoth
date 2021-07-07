@@ -1,7 +1,12 @@
 .center{width:100%; height: auto; max-width: 1060px; margin:auto; position:relative;}
 .wrap{width:100%; height:auto;}
-.overlay{position:fixed; width:0; height:100vh; left:0; top:0; background:#000;opacity:0;z-index:9999;}
+.overlay{position:fixed; width:0; height:auto; left:0; top:0; background:#000;opacity:0;z-index:9999;}
 section{position:relative;}
+
+/* Full page Navigation Style Code */
+#fp-nav{top:25%; right: 15%!important; background:rgba(175,175,175,0.4); border-radius:15px; padding:10px 0;}
+#fp-nav ul li a span{background:#333; width: 6px !important;height: 6px !important; margin:-3px 0 0 -3px !important}
+#fp-nav ul li a.active span{background:#fff !important;}
 
 /* PC Frame Header Style Code */
 .header{position:fixed; width:100%; height: 105px; top:0; z-index:999;}
@@ -80,13 +85,37 @@ background-size:cover; width:100%; height:100vh;display: flex;align-items: cente
 .page_1 .main_msg img{animation:logo 0.5s 1;}
 /* animation-fill-mode:forwards 를 써놓고 애니메이션 미리 확인 해도 나중에 문제없음*/
 
-.page_1 .main_msg .main_txt{width:0;padding:30px 0; white-space: nowrap;overflow: hidden; animation:txt 0.7s 1; animation-delay: 0.5s; animation-fill-mode: forwards; text-align: center;}
+.page_1 .main_msg .main_txt{width:0;padding:30px 0; white-space: nowrap;overflow: hidden; animation:txt 2s 1; animation-delay: 0.8s; animation-fill-mode: forwards; text-align: center;}
 .page_1 .main_msg .main_txt h2{font-size:43px; color:#fff;}
 
-.page_1 .main_msg .btn_box{width:100%;height:auto;display:flex;}
-.page_1 .main_msg .btn_box a{width:195px; padding:20px 0; border:1px solid #fff; position:relative;overflow:hidden; font-weight:bold; text-align: center;color:#fff; z-index:10}
+/* Common Buttons Style Code */
+.btn_box{width:100%;height:auto;display:flex; justify-content: center;}
+.btn_box a{width:195px; padding:20px 0; border:1px solid #fff; position:relative;overflow:hidden; font-weight:bold; text-align: center;color:#fff; z-index:10}
 
-.page_1 .main_msg .btn_box a:after{content:''; position: absolute; width:150%; height: 100%; background:#fff; top:0; left:-350px; z-index:-1; transform: skewX(-45deg);transition:all 0.4s;}
+.btn_box a:after{content:''; position: absolute; width:150%; height: 100%; background:#fff; top:0; left:-350px; z-index:-1; transform: skewX(-45deg);transition:all 0.4s;}
 
-.page_1 .main_msg .btn_box a:hover:after{left:-50px;}
-.page_1 .main_msg .btn_box a:hover{color:#d72329;}
+.btn_box a:hover:after{left:-50px;}
+.btn_box a:hover{color:#d72329;}
+
+/* Page_2 Style */
+.page_2{background:url(/renewal_mammoth/img/page_bg02.jpg) no-repeat center center; background-size:cover; position:relative;}
+.page_2 .center{display:flex;}
+.page_2 .phone_img{width:25%;}
+.page_2 .phone_img img{width:100%;}
+.page_2 .page_txt_box{width:75%; padding:0 0 0 50px; display:flex; flex-direction: column; justify-content: center;}
+.page_2 .page_txt_box .main_txt.txt{animation:txt 2s 1; animation-fill-mode:forwards; animation-delay: 0.5s;}
+
+.page_2 .page_txt_box .main_txt{padding:30px 0; width:0; overflow:hidden; white-space:nowrap;}
+.page_2 .page_txt_box h2{font-size:43px; color:#fff;}
+.page_2 .page_txt_box .page_logo{background:url(/renewal_mammoth/img/page02_logo.png)no-repeat center center; background-size:cover;width:590px;height: 40px; transform: translateY(70px); opacity:0;}
+.page_2 .page_txt_box .page_logo.txt_up{animation:txt_up 0.7s 1; animation-fill-mode: forwards;}
+
+@keyframes txt_up{
+  0%{transform: translateY(70px); opacity:0;}
+  100%{transform: translateY(0); opacity:1;}
+}
+
+
+.page_2 .page_2_txt{padding:40px 0 60px 0;}
+.page_2 .page_2_txt p{font-size:20px; color:#fff; line-height:25px;}
+.page_2 .btn_box{justify-content: flex-start;}
